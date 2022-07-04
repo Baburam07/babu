@@ -8,19 +8,17 @@ module.exports = {
       fontFamily: {
         poppins: "Poppins",
       },
-      height: {
-        priceheight: "450px",
-      },
-      width: {
-        wid: "556px",
-        widt: "461px",
-        inputwidth: "500px",
-        testwidth: "769px",
-      },
       colors: {
-        teal: colors.teal,
         bcolor: "#FF6100",
         tcolor: "#AEA299",
+      },
+      screens: {
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },
