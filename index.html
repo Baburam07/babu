@@ -13,25 +13,35 @@
 </head>
 
 <body class=" text-neutral-900 bg-white font-poppins font-normal text-xl">
-  <!--Header Section-->
   <header class="max-w-full mt-9">
-    <nav class="container mx-auto md:flex md:flex-row md:justify-between px-5 flex flex-col justify-center">
-      <!--logo-->
-      <div class="flex flex-row gap-x-2 items-center justify-center">
-        <img src="./images/M-logo.svg" alt="M-logo">
-        <p class="leading-10 text-3xl font-semibold tracking-tighter">MasmasHub</p>
+    <nav class="container mx-auto md:flex md:flex-row md:justify-between px-5 flex flex-col">
+
+      <div class="flex flex-row justify-between items-center">
+        <div class="flex flex-row gap-x-1 items-left">
+          <img class="md:h-full sm:h-10 " src="./images/M-logo.svg" alt="M-logo">
+          <p class="leading-10 md:text-3xl sm:text-xl font-semibold tracking-tighter">MasmasHub</p>
+        </div>
+
+        <div class="cursor-pointer text-center text-3xl md:hidden">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </div>
       </div>
-      <!--list and button-->
-      <div class="md:flex md:flex-row flex flex-col gap-x-16">
-        <ul
-          class="flex md:flex-row flex-col gap-x-14 items-center justify-center font-medium text-lg leading-6 tracking-tighter text-tcolor">
-          <li><a href="" class=" hover:text-bcolor">Home</a></li>
-          <li><a href="" class=" hover:text-bcolor">About</a></li>
-          <li><a href="" class=" hover:text-bcolor">Pricing</a></li>
-        </ul>
-        <a href="/" class="bg-bcolor text-white rounded-2xl text-lg font-bold leading-6 h-16 text-center p-4">Sign
+
+      <ul
+        class="flex flex-col md:flex-row md:items-center z-10 bg-white md:bg-none md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-5 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="md:mx-6 my-2 md:my-0"><a href=""
+            class="font-medium md:text-lg  sm:text-sm  leading-6 tracking-tighter text-tcolor hover:text-bcolor duration-500">Home</a>
+        </li>
+        <li class="md:mx-6 my-2 md:my-0"><a href=""
+            class="font-medium md:text-lg  sm:text-sm  leading-6 tracking-tighter text-tcolor hover:text-bcolor duration-500">About</a>
+        </li>
+        <li class="md:mx-6 my-2 md:my-0"><a href=""
+            class="font-medium md:text-lg  sm:text-sm  leading-6 tracking-tighter text-tcolor hover:text-bcolor duration-500">Pricing</a>
+        </li>
+        <a href="/"
+          class="bg-bcolor md:ml-8 my-2 md:my-0  text-white rounded-lg md:text-lg  font-bold leading-6 text-center md:w-40 md:h-14 w-28 h-11  hover:bg-orange-400 duration-500  md:p-4 p-3">Sign
           up</a>
-      </div>
+      </ul>
     </nav>
   </header>
   <main>
@@ -39,195 +49,183 @@
     <section class="hero max-w-full ">
       <div class="container mx-auto px-5 md:flex md:flex-row md:gap-20 flex flex-col relative">
         <div class=" flex flex-col justify-center ">
-          <img src="./images/birds.svg" alt="" class="hidden md:block absolute top-1 left-60">
-          <h2 class="py-5 font-bold xs:text-6xl text-3xl leading-[72px] tracking-tighter pt-16">Designed and built to
+          <img src="./images/birds.svg" alt="" class="hidden lg:block absolute top-1 left-60">
+          <h2 class=" font-bold text-3xl leading-10 md:text-4xl lg:leading-[72px] lg:text-5xl tracking-tighter mt-24">
+            Designed and built to
             keep you
             selling
           </h2>
-          <p class="py-5 font-medium text-xl leading-[136%]">When you need to stay focused and alert on the right deals,
+          <p class="py-5 font-medium  md:text-lg text-sm  leading-[136%]">When you need
+            to stay focused and alert on the right deals,
             our CRM is here
             to support you.</p>
           <div class="flex flex-row gap-x-3 pt-10">
             <a href="/"
-              class="bg-bcolor text-white rounded-2xl text-lg font-bold leading-6 h-14 w-60 text-center p-4">Try it
+              class="bg-bcolor text-white rounded-lg md:text-lg text-base font-bold leading-6 md:h-14 md:w-60 w-52 h-11 text-center md:p-4 p-2 ">Try
+              it
               for free</a>
             <a href="">
-              <ion-icon name="play-circle-outline" class="text-bcolor h-16 w-16"></ion-icon>
+              <ion-icon name="play-circle-outline" class="text-bcolor md:h-16 md:w-16 h-10 w-10"></ion-icon>
             </a>
           </div>
         </div>
-        <!--Illustration-->
-        <div class="flex justify-center">
-          <img src="./images/Illustration.svg" alt="Illustration">
+        <div class="flex flex-row justify-end">
+          <img src="./images/Illustration.svg" alt="Illustration" class="w-full md:w-auto">
         </div>
       </div>
     </section>
     <!--Partners-->
     <section class="max-w-full mt-20">
       <div class="container mx-auto px-5 flex flex-col">
-        <h2 class="font-bold text-[40px] text-center leading-[72px] tracking-tighter">Partners we’ve work with</h2>
-        <div
-          class="md:flex md:flex-row md:justify-center md:gap-28 flex flex-col justify-center flex-wrap gap-y-4 mt-14">
-          <div>
-            <a href="/"><img src="./images/Artwork.svg" alt="Artwork"></a>
+        <h2 class="font-bold md:text-[40px] text-xl text-center leading-[72px] tracking-tighter">Partners we’ve work
+          with</h2>
+        <div class="flex md:flex-row md:gap-x-16 flex-col justify-center flex-wrap gap-y-3 md:mt-14 mt-5">
+          <div class="flex justify-center">
+            <a href="/"><img src="./images/Artwork.svg" alt="Artwork" class="w-[75%] md:w-[100%]"></a>
           </div>
-          <div>
-            <a href="/"><img src="./images/at&at.svg" alt="at&at"></a>
+          <div class="flex justify-center -ml-7 md:ml-0">
+            <a href="/"><img src="./images/at&at.svg" alt="at&at" class="w-[75%] md:w-[100%]"></a>
           </div>
-          <div>
-            <a href="/"><img src="./images/PicsArt_07-01-04.39.19.png" alt="linkedin"></a>
+          <div class="flex justify-center">
+            <a href="/"><img src="./images/PicsArt_07-01-04.39.19.png" alt="linkedin" class="w-[75%] md:w-[100%]"></a>
           </div>
-          <div>
-            <a href="/"><img src="./images/Zendesk.svg" alt="Zendesk"></a>
+          <div class="flex justify-center ml-5 md:ml-0">
+            <a href="/"><img src="./images/Zendesk.svg" alt="Zendesk" class="w-[75%] md:w-[100%]"></a>
           </div>
         </div>
       </div>
     </section>
     <!--Cycle-->
     <section class="max-w-full mt-20">
-      <div
-        class="container mx-auto px-5 md:grid md:grid-cols-3 gap-5 flex flex-col items-center bg-none md:bg-no-repeat md:bg-center md:bg-contain"
+      <div class="container mx-auto px-5 md:gap-x-5 md:flex md:flex-row flex-col md:bg-no-repeat md:bg-center bg-none"
         style="background-image: url(./images/Ellipse\ big.svg);">
-        <div class="md:mt-64 md-flex-col md:justify-center">
-          <img src="./images/girlbrick.svg" alt="girlbrick">
-          <div
-            class="mt-10 w-[58px] h-[58px] border-opacity-50 border border-solid border-orange-300 rounded-full justify-items-center md:ml-14 pl-2 pt-2">
-            <p class="rounded-full bg-bcolor h-[38px] w-[38px] text-center font-bold text-3xl text-white ">1</p>
+        <div class="flex flex-col md:gap-y-10 gap-y-5 md:mt-52 mt-0  md:w-1/3 w-auto">
+          <div class="flex justify-center md:justify-start">
+            <img src="./images/girlbrick.svg" alt="">
           </div>
-          <h4 class="font-bold text-3xl tracking-tighter leading-[72px] text-left mt-10 md:pl-8">Sign up</h4>
-          <p class="font-normal tracking-[150%] text-left mt-10">Zombie ipsum reversus ab viral inferno, nam rick
-            grimes
-            malum
-            cerebro.
-            De carne
+          <div class="flex justify-center md:justify-start md:ml-14">
+            <div
+              class="w-[58px] h-[58px] border-opacity-50 border border-solid border-orange-300 rounded-full pl-2 pt-2">
+              <p class="rounded-full bg-bcolor h-[38px] w-[38px] text-center font-bold text-3xl text-white ">1</p>
+            </div>
+          </div>
+          <h1 class="font-bold md:text-[32px] text-lg md:text-left text-center leading-[72px] tracking-tighter">Sign up
+          </h1>
+          <p class="font-normal md:text-xl text-base leading-[150%] md:text-left text-center">Zombie ipsum reversus ab
+            viral inferno, nam rick
+            grimes malum cerebro. De carne
             lumbering animata.</p>
         </div>
-        <div class=" md:flex-col md:justify-items-start">
-          <img src="./images/dog.svg" alt="dog">
-          <div class="md:flex justify-center">
+        <div class="flex flex-col md:gap-y-10 gap-y-5 md:mt-0 mt-14  md:w-1/3 w-auto">
+          <div class="flex justify-center md:justify-start">
+            <img src="./images/dog.svg" alt="">
+          </div>
+          <div class="flex justify-center">
             <div
               class="mt-10 w-[58px] h-[58px] border-opacity-50 border border-solid border-orange-300 rounded-full pl-2 pt-2">
               <p class="rounded-full bg-bcolor h-[38px] w-[38px] text-center font-bold text-3xl text-white ">2</p>
             </div>
           </div>
-
-          <h4 class="font-bold text-3xl tracking-tighter leading-[72px] mt-10 md:text-center">Track leads</h4>
-          <p class="font-normal tracking-[150%] md:text-center">Craven omni memoria patriae zombieland clairvius
-            narcisse
-            religionis sunt diri undead historiarum.</p>
+          <h1 class="font-bold md:text-[32px] text-lg text-center leading-[72px] tracking-tighter">Track Leads</h1>
+          <p class="font-normal md:text-xl text-base leading-[150%] text-center">Craven omni memoria patriae zombieland
+            clairvius narcisse religionis sunt diri undead historiarum.</p>
         </div>
-        <div class="md:mt-52">
-          <img src="./images/mandog.svg" alt="mandog">
-          <div
-            class="mt-10 w-[58px] h-[58px] border-opacity-50 border border-solid border-orange-300 rounded-full justify-items-center md:ml-14 pl-2 pt-2">
-            <p class="rounded-full bg-bcolor h-[38px] w-[38px] text-center font-bold text-3xl text-white ">3</p>
+        <div class="flex flex-col md:gap-y-10 gap-y-5 md:mt-[124px] mt-14  md:w-1/3 w-auto">
+          <div class="flex justify-center md:justify-start">
+            <img src="./images/mandog.svg" alt="">
           </div>
-          <h4 class="font-bold text-3xl tracking-tighter leading-[72px] text-left mt-10">Increase Sales</h4>
-          <p class="font-normal tracking-[150%] text-left mt-10">Sicut spargit virus ad impetum, qui supersumus flesh
-            eating. </p>
+          <div class="flex justify-center md:justify-start md:ml-14">
+            <div
+              class="mt-10 w-[58px] h-[58px] border-opacity-50 border border-solid border-orange-300 rounded-full pl-2 pt-2">
+              <p class="rounded-full bg-bcolor h-[38px] w-[38px] text-center font-bold text-3xl text-white ">3</p>
+            </div>
+          </div>
+          <h1 class="font-bold md:text-[32px] text-lg md:text-left text-center leading-[72px] tracking-tighter">
+            Increase Sales</h1>
+          <p class="font-normal md:text-xl text-base leading-[150%] md:text-left text-center">Sicut spargit virus ad
+            impetum, qui supersumus flesh eating. </p>
         </div>
       </div>
     </section>
     <!--Features-->
-    <section class="max-w-full bg-bcolor mt-20 ">
-      <div class="container mx-auto px-5 flex flex-col-reverse md:flex-row pb-10 relative">
-        <div class="md:w-2/3 md:grid md:grid-cols-2 flex-col gap-x-10 md:gap-y-10">
-          <h1
-            class="pt-20 col-span-2  font-bold md:text-left text-center text-4xl text-white tracking-tighter leading-[72px]">
-            Features</h1>
-          <div class="py-10 md:py-0">
-            <div class="flex justify-center md:justify-start ">
-              <img src="./images/extension_24px.svg" alt="extension_24px">
-            </div>
-            <h2 class="font-bold md:text-left text-center text-white text-3xl tracking-tighter leading-[72px]">Manage
-              leads and
-              deals
-            </h2>
-            <p class="font-normal text-xl md:text-left text-center leading-[150%] text-white">Zombie ipsum reversus ab
-              viral inferno, nam rick
-              grimes malum
-              cerebro. De carne lumbering animata.</p>
-          </div>
-          <div class="py-10 md:py-0">
-            <div class="flex justify-center md:justify-start ">
-              <img src="./images/contact_phone_24px.svg" alt="contact_phone_24px">
-            </div>
-            <h2 class="font-bold md:text-left text-center text-white text-3xl tracking-tighter leading-[72px]">Track
-              Communication
-            </h2>
-            <p class="font-normal text-xl md:text-left text-center leading-[150%] text-white">Zombie ipsum reversus ab
-              viral inferno, nam rick
-              grimes malum cerebro. De carne lumbering animata.</p>
-          </div>
-          <div class="py-10 md:py-0">
-            <div class="flex justify-center md:justify-start">
-              <img src="./images/streetview_24px.svg" alt="streetview_24px">
-            </div>
-
-            <h2 class="font-bold md:text-left text-center text-white text-3xl tracking-tighter leading-[72px]">Animate &
-              Grow</h2>
-            <p class="font-normal text-xl text-center leading-[150%] text-white">Zombie ipsum reversus ab viral inferno,
-              nam rick
-              grimes malum cerebro. De carne lumbering animata.</p>
-          </div>
-          <div class="py-10 md:py-0">
-            <div class="flex justify-center md:justify-start">
-              <img src="./images/extension_24px.svg" alt="extension_24px">
-            </div>
-            <h2 class="font-bold md:text-left text-center text-white text-3xl tracking-tighter leading-[72px]">Inshights
-              &
-              Reports</h2>
-            <p class="font-normal text-xl leading-[150%] text-white text-center md:text-left">Zombie ipsum reversus ab
-              viral inferno, nam rick
-              grimes malum cerebro. De carne lumbering animata.</p>
-          </div>
+    <!-- <section class="max-w-full bg-bcolor mt-10 ">
+      <div class="container mx-auto pl-5 grid grid-cols-3 ">
+        <h1 class="col-span-2">Features</h1>
+        <div class="row-span-3 flex justify-end">
+          <img src="./images/robot.svg" alt="robot">
         </div>
-        <img class="hidden md:block absolute  left-2/3 bottom-[10%] overflow-hidden" src="/images/robot.svg"
-          height="400px" width="400px" alt="robot">
+        <div>
+          <div>
+            <img src="./images/extension_24px.svg" alt="extension">
+          </div>
+          <h1>Manage leads and deals</h1>
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata.</p>
+        </div>
+        <div>
+          <div>
+            <img src="./images/extension_24px.svg" alt="extension">
+          </div>
+          <h1>Manage leads and deals</h1>
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata.</p>
+        </div>
+        <div>
+          <div>
+            <img src="./images/extension_24px.svg" alt="extension">
+          </div>
+          <h1>Manage leads and deals</h1>
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata.</p>
+        </div>
+        <div>
+          <div>
+            <img src="./images/extension_24px.svg" alt="extension">
+          </div>
+          <h1>Manage leads and deals</h1>
+          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata.</p>
+        </div>
       </div>
-    </section>
+    </section> -->
     <!--Slider-->
     <section class="slider max-w-full  mt-32">
       <div class="container mx-auto px-5">
         <div class="flex justify-center items-center">
-          <p class="font-bold text-3xl">Testimonials</p>
+          <p class="font-bold md:text-3xl text-xl">Testimonials</p>
         </div>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="bg-bcolor rounded-lg flex flex-col justify-center p-10 items-center h-80">
-                <p class="text-sm px-5">
-                  “ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              <div class="bg-bcolor rounded-lg md:grid md:grid-cols-1 justify-center p-10 items-center h-80">
+                <p class="md:text-sm text-xs md:px-5 px-2 py-3">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi.”
+                  laboris nisi."
                 </p>
-                <div class="flex flex-row px-5">
+                <div class="flex flex-row md:px-5 px-2 py-3">
                   <div>
                     <img src="./images/girl.svg" alt="girl" />
                   </div>
                   <div class="ml-2">
-                    <h1 class="font-bold">Janie Adams</h1>
-                    <p>Client</p>
+                    <h1 class="font-bold md:text-xl text-sm leading-[150%]">Janie Adams</h1>
+                    <p class="font-normal md:text-lg text-xs leading-8">Client</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-tcolor rounded-lg h-80 grid grid-cols-1 justify-center p-10 items-center ">
-                <p class="text-sm px-5">
-                  “ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              <div class="bg-tcolor rounded-lg h-80 md:grid md:grid-cols-1 justify-center p-10 items-center ">
+                <p class="md:text-sm text-xs md:px-5 px-2 py-3">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi.”
+                  laboris nisi."
                 </p>
-                <div class="flex flex-row px-5">
+                <div class="flex flex-row md:px-5 px-2 py-3">
                   <div>
                     <img src="./images/girl.svg" alt="girl" />
                   </div>
                   <div class="ml-2">
-                    <h1 class="font-bold">Janie Adams</h1>
-                    <p>Client</p>
+                    <h1 class="font-bold  md:text-xl text-sm leading-[150%]">Janie Adams</h1>
+                    <p class="font-normal md:text-lg text-xs leading-8">Client</p>
                   </div>
                 </div>
               </div>
@@ -243,27 +241,27 @@
     <!--Team-->
     <section class="team mt-24 max-w-full">
       <div class="container mx-auto px-5 flex flex-col justify-center items-center">
-        <h1 class="font-bold text-3xl text-center">Team</h1>
+        <h1 class="font-bold md:text-3xl text-xl text-center">Team</h1>
         <div class="md:flex md:flex-row mt-8 justify-center md:gap-10 flex flex-col md: gap-10">
           <div>
-            <img class="bg-amber-300 rounded-xl h-[400px] w-[400px]" src="./images/anthony.svg" width="327px"
-              alt="Anthony">
+            <img class="bg-amber-300 rounded-xl lg:h-[400px] lg:w-[400px]  md:w-[350px] md:h-[350px] h-52 w-52"
+              src="./images/anthony.svg" alt="Anthony">
+            <caption>
+              <h1 class="ml-5 font-bold md:text-base text-sm mt-5">Anthony Adams</h1>
+              <p class="ml-5 md:text-sm text-xs">Client</p>
+            </caption>
+          </div>
+          <div>
+            <img class="bg-violet-300 rounded-xl lg:h-[400px] lg:w-[400px]  md:w-[350px] md:h-[350px] h-52 w-52"
+              src="./images/anthonyboy.svg" alt="anthonyboy">
             <caption>
               <h1 class="ml-5 font-bold text-base mt-5">Anthony Adams</h1>
               <p class="ml-5 text-sm">Client</p>
             </caption>
           </div>
           <div>
-            <img class="bg-violet-300 rounded-xl h-[400px] w-[400px]" src="./images/anthonyboy.svg" width="327px"
-              alt="anthonyboy">
-            <caption>
-              <h1 class="ml-5 font-bold text-base mt-5">Anthony Adams</h1>
-              <p class="ml-5 text-sm">Client</p>
-            </caption>
-          </div>
-          <div>
-            <img class="bg-green-400 rounded-xl h-[400px] w-[400px]" src="./images/anthonyblack.svg" width="327px"
-              alt="anthonyblack">
+            <img class="bg-green-400 rounded-xl lg:h-[400px] lg:w-[400px] md:w-[350px] md:h-[350px] h-52 w-52"
+              src="./images/anthonyblack.svg" alt="anthonyblack">
             <caption>
               <h1 class="ml-5 font-bold text-base mt-5">Anthony Adams</h1>
               <p class="ml-5 text-sm">Client</p>
@@ -271,55 +269,62 @@
           </div>
         </div>
       </div>
-      <!--Pricing-->
+
       <div class="container mx-auto flex md:flex-row justify-center items-center mt-36">
-        <h1 class="font-bold text-3xl">Pricing</h1>
+        <h1 class="font-bold md:text-3xl text-xl leading-[72px] tracking-tighter">Pricing</h1>
       </div>
-      <div class=" flex md:flex-row md:justify-center flex-col gap-9 md:gap-14 mt-14  md:items-end items-center px-5 ">
-        <div class="w-[450px] rounded-xl flex flex-col items-center h-[568px] shadow-2xl px-20 py-40">
-          <div class="pb-10">
-            <img src="./images/palm-tree 1.svg" width="80px" alt="tree">
+      <div class=" flex md:flex-row md:justify-center flex-col gap-5 md:gap-8 mt-14  md:items-end items-center px-5 ">
+        <div
+          class="md:w-[359px] w-[250px] rounded-xl flex flex-col items-center md:h-[568px] h-[300px] shadow-2xl md:px-14 px-2 md:py-40 py-10">
+          <div class="md:pb-10 pb-5">
+            <img class="md:w-20 md:h-20 h-16 w-16" src="./images/palm-tree 1.svg" alt="tree">
           </div>
-          <h1 class="font-bold text-2xl pb-10">Basic</h1>
-          <div class="flex text-bcolor justify-center items-center pb-10">
-            <h2 class="text-sm">$</h2>
-            <h2 class="text-3xl">10</h2>
-            <h2 class="text-sm">/MONTH</h2>
+          <h1 class="font-bold md:text-2xl text-lg md:pb-10 pb-5">Basic</h1>
+          <div class="flex text-bcolor justify-center items-center md:pb-10 pb-5">
+            <h2 class="md:text-sm text-xs">$</h2>
+            <h2 class="md:text-3xl text-xl">10</h2>
+            <h2 class="md:text-sm text-xs">/MONTH</h2>
           </div>
-          <p class="text-sm text-center">Singles who are done with dating & ready to find their partner</p>
+          <p class="md:text-sm text-xs text-center leading-[150%]">Singles who are done with dating & ready to find
+            their partner</p>
         </div>
-        <div class="w-[450px]  bg-bcolor rounded-xl text-white flex flex-col  items-center h-[644px] px-20 py-40">
-          <div class="pb-10">
-            <img src="./images/rocket 1.svg" width="80px" alt="rocket">
+        <div
+          class="md:w-[359px] w-[250px] bg-bcolor rounded-xl text-white flex flex-col  items-center md:h-[644px] h-[400px] md:px-14 px-2 md:py-40 py-10">
+          <div class="md:pb-10 pb-5">
+            <img class="md:w-20 md:h-20 h-16 w-16" src="./images/rocket 1.svg" alt="rocket">
           </div>
-          <h1 class="font-bold text-2xl pb-10">Premium</h1>
-          <div class="flex  text-white justify-center items-center pb-10">
-            <h2 class="text-sm">$</h2>
-            <h2 class="text-3xl">19</h2>
-            <h2 class="text-sm">/MONTH</h2>
+          <h1 class="font-bold md:text-2xl text-lg md:pb-10 pb-5 tracking-tighter leading-[72px]">Premium</h1>
+          <div class="flex  text-white justify-center items-center md:pb-10 pb-5">
+            <h2 class="md:text-sm text-xs">$</h2>
+            <h2 class="md:text-3xl text-xl">19</h2>
+            <h2 class="md:text-sm text-xs">/MONTH</h2>
           </div>
-          <p class="text-sm text-center">Couples wanting to resolve conflicts that erode their connection”</p>
+          <p class="md:text-sm text-xs text-center leading-[150%]">Couples wanting to resolve conflicts that erode their
+            connection”
+          </p>
         </div>
-        <div class="w-[450px] rounded-xl flex flex-col items-center shadow-2xl h-[568px] px-20 py-40">
-          <div class="pb-10">
-            <img src="./images/fire 3.svg" width="80px" alt="fire">
+        <div
+          class="md:w-[359px] w-[250px] rounded-xl flex flex-col items-center shadow-2xl md:h-[568px] h-[300px] md:px-14 px-2 md:py-40 py-10">
+          <div class="md:pb-10 pb-5">
+            <img class="md:w-20 md:h-20 h-16 w-16" src="./images/fire 3.svg" alt="fire">
           </div>
-          <h1 class="font-bold text-2xl pb-10">Ultimate</h1>
-          <div class="flex text-bcolor justify-center items-center pb-10">
-            <h2 class="text-sm">$</h2>
-            <h2 class="text-3xl">39</h2>
-            <h2 class="text-sm">/MONTH</h2>
+          <h1 class="font-bold md:text-2xl text-lg md:pb-10">Ultimate</h1>
+          <div class="flex text-bcolor justify-center items-center md:pb-10 pb-5">
+            <h2 class="md:text-sm text-xs">$</h2>
+            <h2 class="md:text-3xl text-xl">39</h2>
+            <h2 class="md:text-sm text-xs">/MONTH</h2>
           </div>
-          <p class="text-sm text-center">Singles who are done with dating & ready to find their partner</p>
+          <p class="md:text-sm text-center text-xs">Singles who are done with dating & ready to find their partner</p>
         </div>
     </section>
     <!--Call to action-->
-    <section class="mt-40 max-w-full ">
+    <!-- <section class="mt-40 max-w-full ">
       <div class="container mx-auto px-5 bg-bcolor rounded-2xl relative">
         <div class="flex flex-col ">
           <h1 class="font-bold text-4xl text-white pt-32 md:pl-32 leading-[72px] tracking-tighter">Call to
             action section</h1>
-          <p class="md:pl-32 pb-10 text-lg font-normal text-white leading-[150%] md:w-2/3">Zombie ipsum reversus ab
+          <p class="md:pl-32 pb-10 text-lg font-normal text-white leading-[150%] md:w-2/3">
+            Zombie ipsum reversus ab
             viral
             inferno,
             nam
@@ -327,109 +332,116 @@
             malum cerebro. De carne lumbering animata.</p>
           <a class="md:ml-32 mb-40 h-16 w-60 rounded-2xl text-center p-4 bg-white text-bcolor">Know more</a>
         </div>
-        <img class="hidden md:block overflow-hidden absolute bottom-[10%] left-2/3" src="./images/girlanddog.svg"
-          alt="">
+        <img class="hidden md:block absolute bottom-0 right-0" src="./images/girlanddog.svg" alt="">
       </div>
-
-    </section>
+    </section> -->
     <!--FAQ-->
     <section class="bg-amber-100 mt-28 max-w-full">
-      <div class="container mx-auto px-5 py-20">
-        <h1 class="font-bold text-4xl py-5 leading-[72px] tracking-tighter">FAQ</h1>
-        <p class="md:w-1/2 py-5 font-normal text-xl leading-[150%]">Craven omni memoria patriae zombieland clairvius
+      <div class="container mx-auto px-5 md:py-20 py-14">
+        <h1 class="font-bold md:text-4xl text-2xl py-5 leading-[72px] tracking-tighter md:text-left text-center">FAQ
+        </h1>
+        <p class="md:w-3/4 md:py-5 py-1 font-normal md:text-xl text-sm leading-[150%]">Craven omni memoria patriae
+          zombieland
+          clairvius
           narcisse religionis
           sunt diri undead
           historiarum.</p>
-        <details class="py-3 bg-bcolor px-5 rounded-lg">
-          <summary class="font-bold text-2xl leading-[72px] tracking-tighter">Manage leads and deals</summary>
-          <p class="font-normal text-xl leading-[150%]">Craven omni memoria patriae zombieland clairvius narcisse
+        <details class="md:py-3 py-1 bg-bcolor px-5 rounded-lg">
+          <summary class="font-bold md:text-2xl text-base leading-[72px] tracking-tighter">Manage leads and deals
+          </summary>
+          <p class="font-normal md:text-xl text-sm leading-[150%]">Craven omni memoria patriae zombieland clairvius
+            narcisse
             religionis sunt diri
             undead historiarum. Golums,
             zombies unrelenting et Raimi fascinati beheading.</p>
         </details>
-        <details class="py-3 px-5">
-          <summary class="font-bold text-2xl leading-[72px] tracking-tighter">Track Communication</summary>
-          <p class="font-normal text-xl leading-[150%]">Craven omni memoria patriae zombieland clairvius narcisse
+        <details class="md:py-3 py-1 px-5">
+          <summary class="font-bold md:text-2xl text-base leading-[72px] tracking-tighter">Track Communication</summary>
+          <p class="font-normal md:text-xl text-sm leading-[150%]">Craven omni memoria patriae zombieland clairvius
+            narcisse
             religionis sunt diri undead historiarum. Golums,
             zombies unrelenting et Raimi fascinati beheading.</p>
         </details>
-        <details class="py-3 px-5">
-          <summary class="font-bold text-2xl leading-[72px] tracking-tighter">Automate & Grow</summary>
-          <p class="font-normal text-xl leading-[150%]">Craven omni memoria patriae zombieland clairvius narcisse
+        <details class="md:py-3 py-1 px-5">
+          <summary class="font-bold md:text-2xl text-base leading-[72px] tracking-tighter">Automate & Grow</summary>
+          <p class="font-normal md:text-xl text-sm leading-[150%]">Craven omni memoria patriae zombieland clairvius
+            narcisse
             religionis sunt diri
             undead
             historiarum. Golums,
             zombies unrelenting et Raimi fascinati beheading.</p>
         </details>
-        <details class="py-3 px-5">
-          <summary class="font-bold text-2xl leading-[72px] tracking-tighter">Inshights & Reports</summary>
-          <p class="font-normal text-xl leading-[150%]">Craven omni memoria patriae zombieland clairvius narcisse
+        <details class="md:py-3 py-1 px-5">
+          <summary class="font-bold md:text-2xl text-base leading-[72px] tracking-tighter">Inshights & Reports</summary>
+          <p class="font-normal md:text-xl text-sm leading-[150%]">Craven omni memoria patriae zombieland clairvius
+            narcisse
             religionis sunt diri undead historiarum.
             Golums,
             zombies unrelenting et Raimi fascinati beheading.</p>
         </details>
-
       </div>
     </section>
     <!--Sign up-->
     <section class=" bg-bcolor mt-10 max-w-full">
-      <div class="container mx-auto px-5 md:flex md:flex-col md:justify-center text-center pb-24">
-        <div class=" font-bold text-4xl text-white pt-24">
+      <div class="container mx-auto px-5 flex flex-col justify-center text-center pb-24 pt-24">
+        <div class=" font-bold md:text-4xl text-lg text-white text-center">
           <h1>Sign up to our newsletter!</h1>
         </div>
-        <div class="w-inputwidth text-center pt-5 pb-5 text-white">
-          <p class="font-normal text-base">Craven omni memoria patriae zombieland clairvius narcisse religionis sunt
+        <div class=" py-5 px-5 text-white text-center">
+          <p class="font-normal md:text-base text-xs">Craven omni memoria patriae zombieland clairvius narcisse <br>
+            religionis sunt
             diri undead historiarum.</p>
         </div>
-        <div class="">
-          <input class="h-16 border border-white bg-transparent xs:rounded-l-2xl  p-5 placeholder-white" type="email"
-            placeholder="email address">
-          <button class="bg-white h-16 text-bcolor xs:-ml-2 xs:rounded-r-xl  p-4">Subscribe</button>
+        <div>
+          <input
+            class=" md:h-16 h-10 md:w-60 w-36 md:text-base text-xs border border-white bg-transparent rounded-l-xl md:p-5 p-2 md:-mt-1 placeholder-white"
+            type="email" placeholder="email address">
+          <button
+            class="bg-white md:h-16 h-10 md:w-32 w-[66px] md:text-base text-xs text-bcolor -ml-2 rounded-r-xl md:p-5 ">Subscribe</button>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <!--footer-->
     <section class="max-w-full mt-28">
       <div
-        class="container mx-auto px-5 flex md:justify-between md:flex-row flex-col justify-center text-center gap-y-5 pb-20 border-b-2">
+        class="container mx-auto px-5 flex md:justify-between md:flex-row flex-col justify-center text-center gap-x-3 gap-y-5 pb-20 border-b-2">
         <div class="flex flex-col gap-3">
           <div class="flex flex-row gap-2 justify-center">
-            <img src="./images/M-logo.svg" alt="Menu">
-            <h1 class="font-semibold text-3xl">MasmasHub</h1>
+            <img src="./images/M-logo.svg" alt="Menu" class="w-8 md:w-[100%]">
+            <h1 class="font-semibold md:text-3xl text-xl">MasmasHub</h1>
           </div>
-          <p class="mt-5 font-normal text-xl leading-[150%] ">-Your tagline</p>
+          <p class="mt-5 font-normal md:text-xl text-base leading-[150%] ">-Your tagline</p>
         </div>
-        <div class="flex flex-row gap-10 justify-center ">
-          <div class="flex flex-col font-normal text-xl leading-[150%]">
+        <div class="flex md:flex-row flex-col gap-10 justify-center ">
+          <div class="flex flex-col font-normal md:text-xl text-base leading-[150%]">
             <a href="/">Home</a>
             <a href="/">Popular</a>
             <a href="/">About</a>
             <a href="/">Contact</a>
           </div>
-          <div class="flex flex-col font-normal text-xl leading-[150%]">
+          <div class="flex flex-col font-normal md:text-xl text-base leading-[150%]">
             <a href="/">Home</a>
             <a href="/">Popular</a>
             <a href="/">About</a>
             <a href="/">Contact</a>
           </div>
-          <div class="flex flex-col font-normal text-xl leading-[150%]">
+          <div class="flex flex-col font-normal md:text-xl text-base leading-[150%]">
             <a href="/">Home</a>
             <a href="/">Popular</a>
             <a href="/">About</a>
             <a href="/">Contact</a>
           </div>
         </div>
-        <div class="flex flex-col justify-center">
-          <p class="text-xl font-normal leading-[150%]">Follow us</p>
+        <div class="flex flex-col justify-center px-3">
+          <p class="md:text-xl text-base font-normal leading-[150%]">Follow us</p>
           <div class="flex justify-center">
-            <img class="w-32 h-5 mt-9" src="./images/social.svg" alt="followus">
+            <img class="w-32 h-5 mt-5" src="./images/social.svg" alt="followus">
           </div>
         </div>
       </div>
     </section>
-    <div class="h-16 mt-8 font-normal text-gray-500 text-center text-xl leading-[150%]">
+    <div class="h-16 mt-8 font-normal text-gray-500 text-center md:text-xl text-lg leading-[150%]">
       <p>&copy; 2022. All rights reserved</p>
     </div>
   </footer>
@@ -438,6 +450,13 @@
   <!--icons-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--Hamburger Menu-->
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
   <!--Swiper-->
   <script>
     const swiper = new Swiper('.swiper', {
