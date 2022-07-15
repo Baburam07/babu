@@ -60,7 +60,7 @@
                         to stay focused and alert on the right deals,
                         our CRM is here
                         to support you.</p>
-                    <div class="flex flex-row gap-x-3 pt-10">
+                    <div class="flex flex-row md:gap-x-3 gap-x-10 pt-10">
                         <a href="/"
                             class="bg-bcolor text-white rounded-lg md:text-xl text-base font-bold leading-[80%] md:h-20 md:w-60 w-52 h-11 text-center md:p-7 p-4 hover:bg-orange-400">Try
                             it
@@ -168,7 +168,7 @@
             <div class="container mx-auto px-5 flex flex-col justify-start py-16">
                 <h1 class="font-bold md:text-4xl text-2xl leading-[72px] md:py-5 tracking-tighter">Features</h1>
                 <div class="lg:grid lg:grid-cols-2 gap-10 xl:w-2/3">
-                    <div class="py-5">
+                    <div class="py-7">
                         <div>
                             <img src="./images/extension_24px.svg" alt="extension">
                         </div>
@@ -180,7 +180,7 @@
                             malum cerebro. De carne lumbering
                             animata.</p>
                     </div>
-                    <div class="py-5">
+                    <div class="py-7">
                         <div>
                             <img src="./images/contact_phone_24px.svg" alt="extension">
                         </div>
@@ -191,7 +191,7 @@
                             grimes
                             malum cerebro. De carne lumbering animata.</p>
                     </div>
-                    <div class="py-5">
+                    <div class="py-7">
                         <div>
                             <img src="./images/streetview_24px.svg" alt="extension">
                         </div>
@@ -202,7 +202,7 @@
                             grimes
                             malum cerebro. De carne lumbering animata.</p>
                     </div>
-                    <div class="py-5">
+                    <div class="py-7">
                         <div>
                             <img src="./images/extension_24px.svg" alt="extension">
                         </div>
@@ -603,8 +603,12 @@
             loop: true,
             center: true,
             autoplay: true,
-            slidesPerView: 2,
             spaceBetween: 10,
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                1024: { slidesPerView: 2 }
+            },
+
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
