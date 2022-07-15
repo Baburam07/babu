@@ -225,7 +225,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="bg-bcolor rounded-lg md:grid md:grid-cols-1 justify-center p-10 items-center">
-                                <p class="md:text-xl text-base md:px-5 px-2 py-3 font-normal leading-[150%">
+                                <p class="md:text-xl text-base md:px-5 px-2 py-3 font-normal leading-[150% text-center">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -243,8 +243,10 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg-tcolor rounded-lg  md:grid md:grid-cols-1 justify-center p-10 items-center ">
-                                <p class="md:text-xl text-base md:px-5 px-2 py-3 font-normal leading-[150%]">
+                            <div
+                                class="bg-white rounded-lg  md:grid md:grid-cols-1 justify-center p-10 items-center shadow-black shadow-2xl">
+                                <p
+                                    class="md:text-xl text-base md:px-5 px-2 py-3 font-normal leading-[150%] text-center">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -266,6 +268,7 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
+
         </section>
         <!--Team-->
         <section class="team md:mt-24 mt-10 max-w-full  relative overflow-hidden">
@@ -603,12 +606,11 @@
             loop: true,
             center: true,
             autoplay: true,
-            spaceBetween: 10,
+            spaceBetween: 20,
             breakpoints: {
                 0: { slidesPerView: 1 },
                 1024: { slidesPerView: 2 }
             },
-
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
