@@ -12,6 +12,7 @@ module.exports = {
         bcolor: "#FF6100",
         tcolor: "#AEA299",
         client: "#6B6B6B",
+        fcolor: "#F5C9B04D",
       },
       screens: {
         sm: "640px",
