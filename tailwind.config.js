@@ -13,6 +13,7 @@ module.exports = {
         tcolor: "#AEA299",
         client: "#6B6B6B",
         fcolor: "#F5C9B04D",
+        pricecolor: "#F5894E",
       },
       screens: {
         sm: "640px",
