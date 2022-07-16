@@ -15,13 +15,6 @@ module.exports = {
         fcolor: "#F5C9B04D",
         pricecolor: "#F5894E",
       },
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-      },
     },
   },
   plugins: [],
